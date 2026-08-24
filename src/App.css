@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0 0 15px;
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.subtitle {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+.upload-box {
+  width: 100%;
+  min-height: 430px;
+  padding: 50px 30px;
+  background: #ffffff;
+  border: 3px dashed #9ca3af;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.upload-icon {
+  margin-bottom: 15px;
+  font-size: 55px;
+}
+
+.upload-box h2 {
+  margin: 5px 0 10px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.upload-box p {
+  margin: 8px 0;
+  font-size: 17px;
+  color: #64748b;
+}
+
+.upload-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 32px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.upload-button:hover {
+  background: #1d4ed8;
+}
+
+.file-types {
+  margin-top: 18px !important;
+  font-size: 14px !important;
+}
+
+.file-card {
+  margin-top: 25px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.file-card h3 {
+  margin: 0 0 18px;
+  font-size: 24px;
+  color: #111827;
+}
+
+.file-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #475569;
+}
+
+.analyze-button {
+  margin-top: 18px;
+  padding: 13px 28px;
+  border: none;
+  border-radius: 9px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.analyze-button:hover {
+  background: #15803d;
+}
+
+.analyze-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.progress {
+  margin-top: 18px !important;
+  color: #2563eb !important;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.error-box {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.results {
+  margin-top: 40px;
+}
+
+.results h2 {
+  margin: 0 0 18px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.empty-result {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  color: #64748b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.text-result {
+  width: 100%;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.text-result pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.analysis-card {
+  margin-top: 35px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.analysis-card h2 {
+  margin: 0 0 25px;
+  font-size: 30px;
+  color: #111827;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 25px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.score span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.score strong {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.word-count {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #64748b;
+}
+
+.analysis-section {
+  margin-top: 30px;
+}
+
+.analysis-section h3 {
+  margin: 0 0 15px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.analysis-section ul {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.analysis-section li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .upload-box {
+    min-height: 380px;
+    padding: 40px 20px;
+  }
+
+  .upload-box h2 {
+    font-size: 25px;
+  }
+
+  .score {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .analysis-card {
+    padding: 22px;
+  }
+}
